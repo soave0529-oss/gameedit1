@@ -1,0 +1,17 @@
+{
+  "name": "visual-novel-no-code-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @vn/shared && npm run build -w @vn/runtime && npm run build -w @vn/editor",
+    "test": "vitest run",
+    "dev:editor": "npm run dev -w @vn/editor"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.8"
+  }
+}
