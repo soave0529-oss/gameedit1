@@ -1,0 +1,22 @@
+{
+  "quests": [
+    {
+      "quest_id": "bandit_camp_raid",
+      "title_ko": "도적 소굴 소탕",
+      "desc_ko": "강변의 도적 소굴을 기습해 장물 문서를 회수한다.",
+      "steps": [
+        { "step_id": "kill_bandit_scout", "type": "kill", "target_id": "npc_bandit_scout", "count": 3 },
+        { "step_id": "steal_ledger", "type": "steal", "target_id": "item_smuggling_ledger", "count": 1 }
+      ],
+      "rewards": {
+        "money": 240,
+        "faction_rep_changes": {
+          "government": 15,
+          "merchant_guild": 5,
+          "bandits": -25,
+          "secret_society": 5
+        }
+      }
+    }
+  ]
+}
