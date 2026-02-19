@@ -1,0 +1,23 @@
+{
+  "quests": [
+    {
+      "quest_id": "opening_guard_sweep",
+      "title_ko": "한양의 첫날",
+      "desc_ko": "남대문 부근을 순찰하는 관군의 의심을 피하며 정보를 모은다.",
+      "steps": [
+        { "step_id": "reach_market_gate", "type": "reach", "target_id": "market_gate", "count": 1 },
+        { "step_id": "deliver_note", "type": "deliver", "target_id": "npc_ink_merchant", "count": 1 },
+        { "step_id": "escort_scholar", "type": "escort", "target_id": "npc_young_scholar", "count": 1 }
+      ],
+      "rewards": {
+        "money": 120,
+        "faction_rep_changes": {
+          "government": 5,
+          "merchant_guild": 10,
+          "bandits": -5,
+          "secret_society": 0
+        }
+      }
+    }
+  ]
+}
